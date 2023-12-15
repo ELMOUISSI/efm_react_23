@@ -13,9 +13,6 @@ export default function DetailStagiaire() {
 
     return (
         <div> 
-
-            
-
             {filteredStagiaire.length > 0 ? (
                 <div>
                     <h2>Informations sur {namestg}</h2>
@@ -23,9 +20,9 @@ export default function DetailStagiaire() {
                        
                         <div>
                         <img src={stagiaire.image} alt="" />    
-                        <p>{stagiaire.nom}</p>
-                        <p>{stagiaire.prenom}</p>
-                        <p>{stagiaire.filiare}</p>
+                        <p>Nom   :  {stagiaire.nom}</p>
+                        <p>prenom :   {stagiaire.prenom}</p>
+                        <p> filiare : {stagiaire.filiare}</p>
                         
                         </div>
                      )

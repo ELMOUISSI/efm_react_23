@@ -7,15 +7,15 @@ export default function ListStagiair() {
   console.log(ListStagiaire);
 
   return (
-    <div>
+    <div className='row m-2 p-2'>
       {ListStagiaire.length > 0 ? (
         ListStagiaire.map((item) => (
-          
+
             <Stagiaire item={item} />
           
         ))
       ) : (
-        <p>liste vide</p>
+        <div className='alert alert-danger'>liste vide</div>
       )}
     </div>
   );

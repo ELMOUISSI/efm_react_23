@@ -5,14 +5,15 @@ export default function Stagiaire({ item }) {
 
 
   return (
-    <div>
-      <div className="image">
+    <div className="card" style={{width: '18rem'}}>
+      
       <Link to={ `/detail/${item.nom}`} >
-      <img src={item.image} alt="image"/>
+      <img src={item.image} alt="image" className="card-img-top" />
       </Link>
-         
-      </div>
-     <h3 className="nameStr">{item.nom}</h3>
+         <div className="card-body">
+         <h3 className="card-title">{item.nom}</h3>
+         </div>
+    
     </div>
   );
 }
